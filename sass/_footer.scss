@@ -1,0 +1,91 @@
+.footer {
+    background-color: $black;
+    padding-top: 7rem;
+    text-align: center;
+    color: $grey;
+
+    @media screen and (max-width: $bp-sm) {
+        padding-top: 4rem;
+    }
+
+    &__content {
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        @media screen and (max-width: $bp-xs) {
+            font-size: 1.3rem;
+        }
+    }
+
+    &__contact {
+        @media screen and (max-width: $bp-xs) {
+            flex-direction: column;
+        }
+    }
+
+    &__location {
+        margin: 3rem 0;
+    }
+
+    &__phone {
+        margin-right: 7rem;
+
+        @media screen and (max-width: $bp-xs) {
+            margin-right: 0;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__icon {
+        &-bg {
+            font-size: 2.5rem;
+            margin-right: .6rem;
+            @media screen and (max-width: $bp-xs) {
+                font-size: 1.9rem;
+            }
+        }
+
+        &-sm {
+            font-size: 2rem;
+            margin: 0 .5rem;
+        }
+
+    }
+
+    &__copyright {
+        border-top: 1px solid $grey;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+
+        @media screen and (max-width: 650px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, min-content);
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-text {
+            font-size: 1.3rem;
+            color: $grey;
+
+            @media screen and (max-width: 650px) {
+                grid-row: 3/-1;
+                font-size: 1.1rem;
+            }
+        }
+
+        &-socials {
+            @media screen and (max-width: 650px) {
+                margin: 1.8rem 0;
+            }
+        }
+    }
+
+    &__logo {
+        font-family: poppins-black;
+        font-size: 2.6rem;
+        background: linear-gradient(137.05deg, rgba(#03a7f6, .7), rgba(#e51764, .7));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

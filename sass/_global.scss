@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $bp-lg){
+        font-size: 60%;
+    }
+}
+
+body {
+    font-family: poppins-regular;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    // line-height: 1.8;
+}
+
+// img {
+//     // height: auto;
+//     // width: 100%;
+// }

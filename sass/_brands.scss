@@ -1,0 +1,32 @@
+.brands {
+    background-color: $light-grey;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+
+    @media screen and (max-width: 920px) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        @media screen and (max-width: 920px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, min-content);
+            gap: 4rem 2rem;
+        }
+
+        img {
+            width: 19rem;
+            margin: 0 auto;
+            @media screen and (max-width: $bp-xs) {
+                width: 15rem;
+            }
+            @media screen and (max-width: 400px) {
+                width: 12rem;
+            }
+        }
+    }
+}

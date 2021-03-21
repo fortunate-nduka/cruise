@@ -1,0 +1,74 @@
+h1 {
+    font-family: poppins-light;
+    font-size: 5.5rem;
+    line-height: 1.2;
+
+    @media screen and (max-width: $bp-md) {
+        font-size: 4.5rem;
+    }
+
+    @media screen and (max-width: $bp-sm) {
+        font-size: 4rem;
+    }
+}
+
+h3 {
+    font-family: poppins-medium;
+    font-size: 3.5rem;
+    @media screen and (max-width: $bp-md) {
+        font-size: 3rem;
+    }
+}
+
+h4 {
+    font-family: poppins-medium;
+    font-size: 3.5rem;
+
+    @media screen and (max-width: $bp-md) {
+        font-size: 3rem;
+    }
+}
+
+h6 {
+    font-family: poppins-medium;
+    font-size: 2.2rem;
+    @media screen and (max-width: $bp-md) {
+        font-size: 2rem;
+    }
+}
+
+p {
+    font-family: poppins-regular;
+    color: $light-black;
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    @media screen and (max-width: $bp-sm) {
+        font-size: 1.5rem;
+    }
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url(../assets/fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-medium;
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(../assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-black;
+    src: url(../assets/fonts/Poppins-Black.ttf);
+}
